@@ -1,4 +1,4 @@
-package entities;
+package Construtores.entities;
 public class Product {
   public String name;
   public double price;
@@ -10,7 +10,10 @@ public class Product {
     this.quantity = quantity;
 
   }
-
+  public Product(String name, double price){
+    this.name = name;
+    this.price = price;
+  }
   public double totalValueInStock() {
     return price * quantity;
   }
